@@ -4,12 +4,11 @@
  * @return {boolean}
  */
 var isSubsequence = function(s, t) {
-    const tArr = t.split('');
-    for(let i = 0; i < tArr.length; i++){
+    for(let i = 0; i < t.length; i++){
         if(!s){
             return true;
         }
-        if(tArr[i] === s[0]){
+        if(t[i] === s[0]){
             s = s.slice(1);
         }
     }
